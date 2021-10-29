@@ -47,11 +47,6 @@ def move():
     square(food.x, food.y, 9, colorFood)
     update()
     ontimer(move, 100)
-
-def foodMove():
-    food.x = (randrange(-3, 3)*10) + food.x
-    food.y = (randrange(-3, 3)*10) + food.y 
-    ontimer(foodMove,2000)
     
 
 colors = ['yellow', 'orange', 'green', 'black', 'pink']
