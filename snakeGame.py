@@ -48,6 +48,11 @@ def move():
     update()
     ontimer(move, 100)
     
+#Función para que la comida cambie de posición tomando en cuenta su posición anterior
+def foodMove():
+    food.x = (randrange(-3, 3)*10) + food.x
+    food.y = (randrange(-3, 3)*10) + food.y 
+    ontimer(foodMove,2000)
 
 colors = ['yellow', 'orange', 'green', 'black', 'pink']
 def selected(colors):
